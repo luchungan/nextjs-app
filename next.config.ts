@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  logging:{
+    fetches:{
+      fullUrl:true
+    }
+  },
+  
+  sassOptions: {
+    implementation: 'sass',
+  },
 };
 
 export default nextConfig;

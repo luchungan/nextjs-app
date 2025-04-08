@@ -1,0 +1,14 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 100vh;
+	background-color: darkgray;
+}
+.menu {
+	width: 100px;
+	background-color: aliceblue;
+}
+.content {
+	flex: 1;
+}
