@@ -13,6 +13,8 @@ const Menu = ()=>{
     <Link href={'/about'} >about</Link>
     <Link href={'/'} >Home</Link>
     <Link href={'/blog'} >blog</Link>
+    <Link href={'/cat/a'} >a</Link>
+    <Link href={'/cat/b'} >b</Link>
     
     <PostList posts={posts} />
   </div>

@@ -36,4 +36,4 @@ export default async function Page({
   <p>{post.content}</p>
   <p>{JSON.stringify(_params)}</p>
 </main>
-}
+} 

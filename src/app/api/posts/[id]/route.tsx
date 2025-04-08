@@ -8,7 +8,7 @@ type Context = {
 export async function GET(request:NextRequest,{params}:Context){
   const field = request.nextUrl.searchParams.get('dataField')
   const {id} = await params
-  const data =await ((await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)).json())
+  const data =await ((await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,{next:{revalidate:60,tags:['collection']}})).json())
   const result = field?{[field]:data[field]}:data
 
   return NextResponse.json(result)
