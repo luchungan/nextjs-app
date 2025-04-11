@@ -1,4 +1,6 @@
 import { findToDos, createToDo } from './action';
+import Button from './button';
+import Submit from './submit';
 
 export default async function Page() {
   const todos = await findToDos();
@@ -6,9 +8,10 @@ export default async function Page() {
     <>
       <form action={createToDo}>
         <input type="text" name="todo" />
-        <button type="submit">Submit</button>
+        <Submit />
       </form>
-      <ul>
+      <Button />
+       <ul>
         {todos.map((todo, i) => <li key={i}>{todo}</li>)}
       </ul>
     </>

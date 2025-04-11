@@ -18,6 +18,12 @@ const PostList:React.FC<{posts:Props[]}> = ({posts})=>{
         </li>
       })
     }
+    <style jsx global>{`
+      li{
+        color:red;
+        font-size: 20px;
+      }
+    `}</style>
   </ul>
 }
 

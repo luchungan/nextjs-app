@@ -17,7 +17,9 @@ const Menu = ()=>{
     <Link href={'/cat/b'} >b</Link>
     
     <PostList posts={posts} />
+    
   </div>
+  
 }
 
 export default Menu

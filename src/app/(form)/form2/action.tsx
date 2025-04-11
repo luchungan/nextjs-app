@@ -13,5 +13,10 @@ export async function createToDo(formData: FormData) {
   if (todo) {
     data.push(todo);
   }
-  revalidatePath("/form2");
+  revalidatePath('/form2')
+}
+export async function deleteToDo(){
+  data.pop()
+  revalidatePath('/form2')
+  return data
 }

@@ -1,3 +1,6 @@
+import Image from "next/image"
+import img from "./data"
+
 export const dynamic = 'force-dynamic' // 强制页面每次请求都重新渲染
 
 async function getData() {
@@ -19,7 +22,7 @@ export default async function Page() {
   return (
     <>
       <h1>图片 ID：{data[0].id}</h1>
-      <img src={data[0].url} width="300" />
+      <Image src={data[0].url} width="300" height={300} alt="" placeholder={img} />
       <CatDetail />
     </>
   )
@@ -30,7 +33,7 @@ async function CatDetail() {
   return (
     <>
       <h1>图片 ID：{data[0].id}</h1>
-      <img src={data[0].url} width="300" />
+      <Image src={data[0].url} width="300" height={300} alt="" />
     </>
   )
 }

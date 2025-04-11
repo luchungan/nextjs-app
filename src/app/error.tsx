@@ -8,7 +8,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   },[error])
     return (
         <div>
-            <h2>发生错误</h2>
+            <h2>{`发生错误,${error}`}</h2>
             <button onClick={reset}>重试</button>
         </div>
     );
