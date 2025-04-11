@@ -10,7 +10,7 @@ const Menu = ()=>{
     {slug:'aa3',title:'aa3'},
   ]
   return <div className={styles.wrapper}>
-    <Link href={'/about'} >about</Link>
+    <Link className="text-black text-2xl"  href={'/about'} >about</Link>
     <Link href={'/'} >Home</Link>
     <Link href={'/blog'} >blog</Link>
     <Link href={'/cat/a'} >a</Link>
