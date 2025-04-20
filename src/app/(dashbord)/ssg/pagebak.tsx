@@ -1,10 +1,4 @@
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
- 
-type Repo = {
-  name: string
-  stargazers_count: number
-}
- 
+
 
 interface Post {
   id: string
