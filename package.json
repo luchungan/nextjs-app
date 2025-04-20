@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --profile",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pm2": "pm2 start npm --name 'nextjs-app' -- run start"
   },
   "dependencies": {
     "@prisma/client": "6.6.0",
