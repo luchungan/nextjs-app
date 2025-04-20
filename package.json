@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "6.6.0",
     "ai": "^4.2.10",
     "next": "15.2.4",
     "openai": "^4.91.1",
@@ -27,6 +28,7 @@
     "@typescript-eslint/parser": "^8.29.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
+    "prisma": "^6.6.0",
     "sass": "^1.86.0",
     "tailwindcss": "^4",
     "typescript": "^5"
