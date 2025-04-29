@@ -4,6 +4,7 @@ import "./globals.css";
 import styles from './layout.module.scss'
 import Menu from "@/components/menu";
 import { redirect } from "next/navigation";
+import StoreProvider from "./StoreProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+           <StoreProvider count={0}>
         <div className={styles.main}>
-        <div className={styles.menu}>
-          <Menu />
+          <div className={styles.menu}>
+         
+              <Menu />
+           
           <span>haha</span>
         </div>
         <div className={styles.content}>
@@ -33,6 +37,7 @@ export default function RootLayout({
           <div>{modal}</div>
         </div>
         </div>
+           </StoreProvider>
         
         
       </body>

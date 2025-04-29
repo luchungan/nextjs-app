@@ -2,20 +2,26 @@
   "name": "testapp02",
   "version": "0.1.0",
   "private": true,
+  "mian": "main.js",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --profile",
+    "build": "next build --profile && next export",
     "start": "next start",
     "lint": "next lint",
-    "pm2": "pm2 start npm --name 'nextjs-app' -- run start"
+    "pm2": "pm2 start npm --name 'nextjs-app' -- run start",
+    "electron": "electron ."
   },
   "dependencies": {
     "@prisma/client": "6.6.0",
+    "@reduxjs/toolkit": "^2.7.0",
     "ai": "^4.2.10",
+    "electron": "^35.2.0",
+    "electron-is-dev": "^3.0.1",
     "next": "15.2.4",
     "openai": "^4.91.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
     "server-only": "^0.0.1",
     "styled-components": "^6.1.17"
   },
